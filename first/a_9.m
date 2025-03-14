@@ -1,0 +1,15 @@
+n = 1000/616;
+x = -5:0.01:5;
+y = 1/(sqrt(2*pi)/n)*exp(-x.^2/2*n^2);
+plot(x,y,'k');
+grid on;
+hold on;
+n = 500/616;
+x = -5:0.01:5;
+y = 1/(sqrt(2*pi)/n)*exp(-x.^2/2*n^2);
+plot(x,y,'g');
+n = 100/616;
+x = -20:0.01:20;
+y = 1/(sqrt(2*pi)/n)*exp(-x.^2/2*n^2);
+plot(x,y,'r');
+hold off;
